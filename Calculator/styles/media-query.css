@@ -1,0 +1,34 @@
+@media (max-width: 1000px){
+    .calculatorLogo{
+        display: none;
+    }
+}
+@media (max-width: 685px) {
+    .calculator-container header{
+        justify-content: start;
+        gap: 20rem;
+        
+    }
+    .historyInPhone{
+        display: block;
+        transition: .5s;
+    }
+    .historyInPhone:active{
+        scale: 1.1;
+    }
+    
+    .calculator-header .history-memory{
+        display: none;
+    }
+    .calculator{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .history-display-area{
+    /* background-color: blue; */
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    z-index: 1;
+    background-color: #3e3c3c;
+    display: none;
+}
+}

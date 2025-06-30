@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number guessing game </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game">
+            <h1>Number Guessing game</h1>
+            <p>Guess number between 1 to 100</p>
+            <p id="showResult"></p>
+            <div class="inputHere">
+                <input id="inputField" type="text" max="100" min="1">
+            </div>
+            <div class="check-btn">
+                <button id="check">Check</button>
+            </div>
+            <div class="Records">
+                <p id="previousRecord">Previous Records:</p>
+                <p id="remainingAttempts">Remaining Attempts: 10</p>
+            </div>
+            <p id="displayAfterLoss"></p>
+            <div class="startNewGame">
+                <button id="newGame">New Game</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
