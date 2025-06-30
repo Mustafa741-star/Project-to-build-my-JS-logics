@@ -10,6 +10,19 @@ This repository contains small projects I created while practicing JavaScript lo
 - TemperatureConverter ✅
 - Calculator ✅
 - To-Do ListApp ⏳
+- QuizApp ⏳
+- Stopwatch / Timer ⏳
+- Form Validator ⏳
+- Rock Paper Scissors Game ⏳
+- WeatherApp ⏳
+- CurrencyConverter ⏳
+- Movie Search App ⏳
+- Expense Tacker ⏳
+- Typing Speed Tester ⏳
+- AI Chat Interface ⏳
+- Crypto Price Tacker ⏳
+- Notcoin-Inspired Tap-to-Earn Game(Final Boss project)⏳
+  
 
 ## 💡 Why I Built This
 These projects were part of my learning journey to deepen my understanding of JavaScript fundamentals—especially around decision-making and interactivity.
