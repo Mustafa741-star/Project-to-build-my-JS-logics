@@ -1,7 +1,7 @@
 const displayHere = document.getElementById("display");
 const Buttons = document.querySelectorAll(".button")
 const historyDisplayArea = document.querySelector(".history-display-area");
-const binBtn = document.querySelector(".binBtn");
+// const binBtn = document.querySelector(".binBtn");
 const clickHistory = document.getElementById("history");
 const clickMemory = document.getElementById("memory");
 const memoryDisplayArea = document.querySelector(".memory-display-area");
@@ -21,16 +21,23 @@ Array.from(Buttons).forEach((button) => {
                 displayHere.value = "Error"
                 string = ""
             }
+            // to write the expression in history area 
             let paraInHistory = document.createElement("p")
             paraInHistory.textContent = `${string} = ${expression}`;
             historyDisplayArea.appendChild(paraInHistory);
 
             historyDisplayArea.classList.add("history-display-area-more-styles"); // I use this thing for first time here!
 
-            binBtn.addEventListener("click", ()=>{
-                paraInHistory.remove();
-            })
+            // bin to clean the history area 
+            let binBtn = document.createElement("img");
+            binBtn.src = "asserts/bin.png";
+            binBtn.alt = "Delete";
+            historyDisplayArea.appendChild(binBtn);
+            binBtn.classList.add("binBtn");
 
+            binBtn.addEventListener("click", ()=>{
+                historyDisplayArea.innerHTML = "";
+            })
         }
         else if(e.target.innerHTML == "⌫") {
             string = string.slice(0, string.length-1);

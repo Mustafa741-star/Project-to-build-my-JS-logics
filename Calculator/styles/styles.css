@@ -142,11 +142,7 @@ body{
     font-size: 2rem;
 }
 
-.history-display-area img{
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-}
+
 /* ========= BUTTON GRID =========== */
 .input-box-container{
     display: grid;
@@ -209,4 +205,9 @@ body{
 .memory-display-area-more-styles{
     display: block;
     margin-left: 1rem;
+}
+.binBtn{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
 }
