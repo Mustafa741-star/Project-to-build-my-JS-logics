@@ -128,6 +128,8 @@ body{
     grid-column: 2 / 3;
     grid-row: 1 / 4;
     background-color: #494343;
+    display: none;
+    margin-left: 20rem;
     
 }
 .history-display-area{
@@ -144,7 +146,6 @@ body{
     position: absolute;
     bottom: 1rem;
     right: 1rem;
-    /* display: none; */
 }
 /* ========= BUTTON GRID =========== */
 .input-box-container{
@@ -198,3 +199,14 @@ body{
 /* input-box ends here */
 
 /* main calculator ends here */
+
+/* ========= Dynamic styles ============= */
+.history-display-area-more-styles{
+    display: block;
+    margin-left: 1rem;
+    /* transition-duration: 2s; */
+}
+.memory-display-area-more-styles{
+    display: block;
+    margin-left: 1rem;
+}
