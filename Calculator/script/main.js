@@ -26,7 +26,7 @@ Array.from(Buttons).forEach((button) => {
             paraInHistory.textContent = `${string} = ${expression}`;
             historyDisplayArea.appendChild(paraInHistory);
 
-            historyDisplayArea.classList.add("history-display-area-more-styles"); // I use this thing for first time here!
+            // historyDisplayArea.classList.add("history-display-area-more-styles"); // I use this thing for first time here!
 
             // bin to clean the history area 
             let binBtn = document.createElement("img");
@@ -77,13 +77,18 @@ let zIndexForHistory = 0;
 let zIndexForMemory = 0;
 // history button to see the history of operation you have performed in the calculator 
 clickHistory.addEventListener("click", ()=>{
-    historyDisplayArea.classList.add("history-display-area-more-styles");
+    historyDisplayArea.classList.toggle("history-display-area-more-styles");
     zIndexForHistory++;
     historyDisplayArea.style.zIndex = zIndexForHistory;
 })
 // memory button to see what are the values are saved by the user after using the calculator
 clickMemory.addEventListener("click", ()=>{
-    memoryDisplayArea.classList.add("memory-display-area-more-styles");
+    memoryDisplayArea.classList.toggle("memory-display-area-more-styles");
     zIndexForMemory++;
     memoryDisplayArea.style.zIndex = zIndexForMemory;
+})
+// history area in phone 
+const historyInPhone = document.querySelector(".historyInPhone");
+historyInPhone.addEventListener('click', ()=>{
+    historyDisplayArea.classList.toggle("historyInPhone");
 })
