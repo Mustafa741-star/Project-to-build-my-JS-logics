@@ -23,10 +23,19 @@
     .calculator{
         grid-template-columns: repeat(1, 1fr);
     }
+    .calculator-withWhen-clickingOn-PhoneHistory-button{
+        margin: 0; padding: 0;
+    }
     .history-display-area{
+    width: 100%;
     grid-column: 1 / 2;
     grid-row: 2 / 4;
     z-index: 1;
     background-color: #3e3c3c;
-}
+    display: none;
+    }
+    .history-display-area-for-phone{
+    display: block;
+    }
+    
 }

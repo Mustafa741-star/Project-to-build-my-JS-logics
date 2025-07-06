@@ -30,7 +30,7 @@ body{
 /* ========= LAYOUT: CONTAINER ========== */
 .calculator-container{
     width: 100%;
-    height: 100%;
+    height: 100dvh;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 50px 1fr;
@@ -45,6 +45,9 @@ body{
     align-self: center;
     padding-left: 0 2rem;
     position: relative;
+}
+.ContainsMenuBarAndCalculatorName{
+    margin-left: 1rem;
 }
 .menu-bar{
     cursor: pointer;
@@ -74,7 +77,7 @@ body{
 /* ======= CALCULATOR GRID ======== */
 .calculator{
     display: grid;
-    grid-template-columns: 1fr 350px;
+    grid-template-columns: 1fr 300px;
     grid-template-rows: 100px 35px 1fr;
     padding: 1rem;
 
@@ -127,18 +130,19 @@ body{
 .memory-display-area {
     grid-column: 2 / 3;
     grid-row: 1 / 4;
-    background-color: #494343;
+    /* background-color: #494343; */
     display: none;
     
 }
 .history-display-area{
     position: relative;
-    text-align: right;
 }
-.history-display-area p{
+
+.history-display-area p, .memory-display-area p{
     margin-right: 1rem;
     margin-top: 1.5rem;
     font-size: 2rem;
+    text-align: right;
 }
 
 
@@ -146,15 +150,14 @@ body{
 .input-box-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     gap: 0.5rem;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
 }
 .input-box-container button{
     max-width: 100%;
-    height: 8.7rem;
     border-radius: 5px;
-    /* background-color: var(--btn-bg); */
     color: var(--text-color);
     border: none;
     cursor: pointer;
@@ -197,13 +200,15 @@ body{
 
 /* ========= Dynamic styles ============= */
 .history-display-area-more-styles{
-    display: block;
+    /* display: block; */
     margin-left: 1rem;
+    /* z-index: 1; */
     /* transition-duration: 2s; */
 }
 .memory-display-area-more-styles{
-    display: block;
+    /* display: block; */
     margin-left: 1rem;
+    /* z-index: 1; */
 }
 .binBtn{
     position: absolute;
